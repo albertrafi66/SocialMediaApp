@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/drawable/back_transparent_black_corner.xml" value="0.262037037037037" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/drawable/back_white_solid_circle.xml" value="0.26615384615384613" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/drawable/ic_add.xml" value="0.262037037037037" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/drawable/stroke_circle.xml" value="0.262037037037037" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/drawable/stroke_white_circle.xml" value="0.26615384615384613" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/drawable/white_ripple.xml" value="0.262037037037037" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/activity_main.xml" value="0.2222222222222222" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/fragment_home.xml" value="0.225" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/rec_home_story.xml" value="0.6" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23645833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
