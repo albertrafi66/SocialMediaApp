@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <soup.neumorphism.NeumorphImageView
+            style="@style/Widget.Neumorph.ImageView"
+            android:padding="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_social_img"
+            />
+
+
+        <soup.neumorphism.NeumorphButton
+            style="@style/Widget.Neumorph.Button"
+            android:text="Hello World!"
+            app:neumorph_backgroundColor="@color/light_green"
+            android:textAllCaps="false"
+            android:textSize="@dimen/normal_14sp_txt_size"
+            android:textStyle="bold"
+            android:fontFamily="@font/bree_serif"
+            app:neumorph_shapeType="flat"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            />
+
+
+        <soup.neumorphism.NeumorphTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/bree_serif"
+            android:textSize="@dimen/normal_txt_size"
+            android:text="Hello World!"
+            android:textColor="@color/gray_txt"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

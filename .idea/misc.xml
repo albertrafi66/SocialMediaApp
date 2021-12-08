@@ -5,14 +5,26 @@
       <map>
         <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/drawable/back_transparent_black_corner.xml" value="0.262037037037037" />
         <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/drawable/back_white_solid_circle.xml" value="0.26615384615384613" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/drawable/black_ripple.xml" value="0.2703125" />
         <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/drawable/ic_add.xml" value="0.262037037037037" />
         <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/drawable/stroke_circle.xml" value="0.262037037037037" />
         <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/drawable/stroke_white_circle.xml" value="0.26615384615384613" />
         <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/drawable/white_ripple.xml" value="0.262037037037037" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/activity_log_in.xml" value="0.23645833333333333" />
         <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/activity_main.xml" value="0.2222222222222222" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/fragment_add.xml" value="0.23645833333333333" />
         <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/fragment_home.xml" value="0.225" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/fragment_notification_details.xml" value="0.23645833333333333" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/fragment_notifications.xml" value="1.0" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/fragment_request.xml" value="0.23645833333333333" />
         <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/rec_home_story.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/rec_notification_details.xml" value="0.23645833333333333" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/rv_home_frag_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/rv_notificatios_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/layout/rv_profile_friend_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23645833333333333" />
+        <entry key="..\:/Android New Project/SocialMediaApp/app/src/main/res/menu/tool_bar_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

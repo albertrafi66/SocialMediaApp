@@ -3,16 +3,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:foreground="@drawable/white_ripple"
+        android:clickable="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/story_images"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -26,10 +32,10 @@
             app:riv_tile_mode="repeat" />
 
         <View
-            app:layout_constraintTop_toTopOf="@id/rec_profile_image"
-            app:layout_constraintBottom_toBottomOf="@id/rec_profile_image"
-            app:layout_constraintLeft_toLeftOf="@id/rec_profile_image"
-            app:layout_constraintRight_toRightOf="@id/rec_profile_image"
+            app:layout_constraintTop_toTopOf="@id/rec_story_profile_image"
+            app:layout_constraintBottom_toBottomOf="@id/rec_story_profile_image"
+            app:layout_constraintLeft_toLeftOf="@id/rec_story_profile_image"
+            app:layout_constraintRight_toRightOf="@id/rec_story_profile_image"
             android:layout_width="0dp"
             android:background="@drawable/stroke_white_circle"
             android:layout_height="0dp"/>
@@ -37,7 +43,7 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:id="@+id/rec_profile_image"
+            android:id="@+id/rec_story_profile_image"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -47,6 +53,7 @@
             />
 
         <TextView
+            android:id="@+id/story_name"
             android:layout_margin="7dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -58,9 +65,10 @@
             android:layout_height="wrap_content"/>
 
         <ImageView
+            android:id="@+id/story_type"
             android:layout_marginRight="7dp"
-            app:layout_constraintTop_toTopOf="@id/rec_profile_image"
-            app:layout_constraintBottom_toBottomOf="@id/rec_profile_image"
+            app:layout_constraintTop_toTopOf="@id/rec_story_profile_image"
+            app:layout_constraintBottom_toBottomOf="@id/rec_story_profile_image"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_width="30dp"
             android:layout_height="30dp"

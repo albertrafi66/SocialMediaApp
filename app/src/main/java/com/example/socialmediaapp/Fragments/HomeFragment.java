@@ -3,64 +3,107 @@ package com.example.socialmediaapp.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.socialmediaapp.Adapters.PostAdapter;
+import com.example.socialmediaapp.Adapters.StoryAdapter;
+import com.example.socialmediaapp.Models.PostModel;
+import com.example.socialmediaapp.Models.StoryModel;
 import com.example.socialmediaapp.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link HomeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
+
 public class HomeFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public HomeFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static HomeFragment newInstance(String param1, String param2) {
-        HomeFragment fragment = new HomeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    RecyclerView recyclerView,rv_post;
+    ArrayList<StoryModel> storyModels=new ArrayList<>();
+    ArrayList<PostModel>postList=new ArrayList<>();
+    View view;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        view= inflater.inflate(R.layout.fragment_home, container, false);
+
+        recyclerView=view.findViewById(R.id.rec_story_home);
+        rv_post=view.findViewById(R.id.home_frag_post);
+
+
+        setStory();
+
+        setPost();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        return view;
+    }
+
+    private void setPost() {
+
+    postList.add(new PostModel(R.drawable.profile_pic,R.drawable.p1,R.drawable.book_mark,"Albert Rafi","Nice travell","56","78","40"));
+    postList.add(new PostModel(R.drawable.profile_pic,R.drawable.p2,R.drawable.book_mark,"Albert Rafi","Nice travell","56","78","40"));
+    postList.add(new PostModel(R.drawable.profile_pic,R.drawable.p3,R.drawable.book_mark,"Albert Rafi","Nice travell","56","78","40"));
+    postList.add(new PostModel(R.drawable.profile_pic,R.drawable.p4,R.drawable.book_mark,"Albert Rafi","Nice travell","56","78","40"));
+    postList.add(new PostModel(R.drawable.profile_pic,R.drawable.p5,R.drawable.book_mark,"Albert Rafi","Nice travell","56","78","40"));
+    postList.add(new PostModel(R.drawable.profile_pic,R.drawable.p6,R.drawable.book_mark,"Albert Rafi","Nice travell","56","78","40"));
+
+        postList.add(new PostModel(R.drawable.profile_pic,R.drawable.p1,R.drawable.book_mark,"Albert Rafi","Nice travell","56","78","40"));
+        postList.add(new PostModel(R.drawable.profile_pic,R.drawable.p2,R.drawable.book_mark,"Albert Rafi","Nice travell","56","78","40"));
+        postList.add(new PostModel(R.drawable.profile_pic,R.drawable.p3,R.drawable.book_mark,"Albert Rafi","Nice travell","56","78","40"));
+        postList.add(new PostModel(R.drawable.profile_pic,R.drawable.p4,R.drawable.book_mark,"Albert Rafi","Nice travell","56","78","40"));
+        postList.add(new PostModel(R.drawable.profile_pic,R.drawable.p5,R.drawable.book_mark,"Albert Rafi","Nice travell","56","78","40"));
+        postList.add(new PostModel(R.drawable.profile_pic,R.drawable.p6,R.drawable.book_mark,"Albert Rafi","Nice travell","56","78","40"));
+        PostAdapter postAdapter=new PostAdapter(postList,getContext());
+
+        rv_post.setAdapter(postAdapter);
+
+        rv_post.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+
+
+
+
+
+
+
+
+
+    }
+
+    private void setStory() {
+
+
+
+        storyModels.add(new StoryModel(R.drawable.profile_pic,R.drawable.live,R.drawable.profile_pic,"Albert Rafi"));
+        storyModels.add(new StoryModel(R.drawable.profile_pic,R.drawable.live,R.drawable.profile_pic,"Albert Rafi"));
+        storyModels.add(new StoryModel(R.drawable.profile_pic,R.drawable.live,R.drawable.profile_pic,"Albert Rafi"));
+        storyModels.add(new StoryModel(R.drawable.profile_pic,R.drawable.live,R.drawable.profile_pic,"Albert Rafi"));
+
+
+        StoryAdapter storyAdapter=new StoryAdapter(storyModels,getActivity());
+        recyclerView.setAdapter(storyAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
+        recyclerView.setNestedScrollingEnabled(false);
+
+
     }
 }
